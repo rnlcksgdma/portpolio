@@ -1,0 +1,104 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1715157163061-a393ada61603?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+
+}
+* {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+body, h1, h2, p, ul{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    color: white;
+    padding: 20px;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+
+}
+section {
+    padding: 40px;
+    
+}
+.gallery {
+    display:flex; 
+    flex-wrap: wrap;
+}
+.item {
+ flex: 0 0 calc(33.3333% - 20px)
+
+}
+.item img {
+    width: 100;
+    height: auto;
+    border-radius: 5px;
+
+
+}
+    
+
+
+.gallery {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* 이미지 줄바꿈 방지, 수평 스크롤 허용 */
+    }
+    
+    .item {
+    /*flex: 0 0 calc(33.3333% - 20px);*/
+    margin: 10px;
+    
+    flex: 0 0 auto; /* 반응형 사이즈 조정 없애고 너비값 고정 */
+    width: 300px;
+    }
+    
+    .item img {
+    width: 100%;
+    /*height: auto;*/
+    height: 300px; /* 높이값 고정, 정사각형으로 맞추기 위해 item 너비값과 동일함 */
+    object-fit: cover; /* 이미지가 부모 사이즈에 맞게 자동으로 조절 */
+    object-position: center; /* 중앙정렬 */
+    border-radius: 5px;
+    }
+
+
+
+    footer {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(50px);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        }
